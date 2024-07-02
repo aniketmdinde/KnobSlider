@@ -1,0 +1,110 @@
+.second.hovered {
+    opacity: 0.8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+}
+
+.outer-box{
+    width: 100%;
+    height: 100vh;
+    background: url('https://videos.pexels.com/video-files/3683326/3683326-uhd_2560_1440_24fps.mp4');
+}
+
+#circle{
+    position: absolute;
+    top: 50%;
+    left: -30vh;
+    transform: translate(0,-50%) rotate(60deg);
+    height: 60vh;
+    width: 60vh;
+    border-radius: 50%;
+    border-width: 10px;
+    background-image: url('./assets/kawasaki-logo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    z-index: 2;
+}
+
+.stripe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    width: 120%;
+    height: 60px;
+    /* background-color: red; */
+    transform-origin: 0% 50%;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+#str1{
+    transform: translate(0,-50%) rotate(-40deg);
+}
+
+#str2{
+    transform: translate(0,-50%) rotate(-20deg);
+}
+
+#str4{
+    transform: translate(0,-50%) rotate(20deg);
+}
+
+#str5{
+    transform: translate(0,-50%) rotate(40deg);
+}
+
+.first{
+    width: 80%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    z-index: 1;
+}
+
+.second{
+    width: 100%;
+    height: 100%;
+    /* background-color: green; */
+    /* margin-left: 30px; */
+    cursor: pointer;
+    opacity: 0.5;
+    white-space: nowrap;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.panel{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    overflow: hidden;
+    top: 50%;
+    transform: translate(0,-50%);
+    opacity: 0.2;
+}
+
+video source{
+    object-fit: cover;
+}
+  
